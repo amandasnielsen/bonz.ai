@@ -464,6 +464,7 @@ section {
 	text-align: center;
 	justify-content: center;
 	margin: 0;
+	margin-bottom: 2rem;
 }
 
 .page.page--book .header-content {
@@ -477,8 +478,7 @@ section {
 	text-align: center;
 }
 
-/* Form styled with grid */
-
+/* Form styled with flex and grid */
 .page.page--book .form-container {
 	display: flex;
 	justify-content: center;
@@ -492,7 +492,7 @@ section {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
 	border: none;
-	max-width: 700px;
+	max-width: 600px;
 }
 
 .page.page--book .book-form .form-group {
@@ -529,15 +529,49 @@ section {
 }
 
 /* Hotel-rooms */
+.page.page--book .card.card--room h3 {
+	font-size: 28px;
+	margin: 1rem 0;
+}
+
+.page.page--book .cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	font-size: 14px;
+}
 
 .page.page--book .card.card--room {
 	width: 362px;
-	height: 500px;
+	height: auto;
 }
 
 .page.page--book .hotel-room-image {
 	width: 362px;
-	height: 120px;
+	height: 170px;
+}
+
+.page.page--book .card.card--room .button-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.page.page--book .card.card--room .button-read-more {
+	background-color: var(--background-color);
+	border: 1px solid var(--text-color);
+}
+
+.page.page--book .show-more {
+	text-align: center;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 3rem;
+	font-size: 14px;
 }
 
 /* Footer */
@@ -584,6 +618,10 @@ section {
 	.page.page--about header {
 		height: 100vh;
 	}	
+
+	.page.page--book header {
+		height: 100vh;
+	}	
 }
 
 @media screen and (min-width: 768px) {
@@ -604,6 +642,26 @@ section {
 	}
 
 	.page.page--about .header-content br {
+		display: none;
+	}
+
+	.page.page--book .logo-wrapper {
+		padding: 1rem;
+	}
+
+	.page.page--book .logo-wrapper img {
+		height: 4rem;
+	}
+
+	.page.page--book .header-content {
+		transform: translateY(-20%)
+	}
+
+	.page.page--book .header-content h1 {
+		font-size: 2.4rem;
+	}
+
+	.page.page--book .header-content br {
 		display: none;
 	}
 }
@@ -627,6 +685,15 @@ section {
 
 	.page.page--about footer .social-media {
 		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.page.page--book section.cards {
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
 	}
 }
 
