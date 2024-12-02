@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css">
     <title>Bonz.ai - book a room</title>
 </head>
 
@@ -31,24 +31,24 @@
         <section class="form-container">
             <form class="book-form">
                 <section class="form-group short-input">
-                    <label for="number">How many people?</label>
-                    <input type="number" class="number" name="number" placeholder="2" required>
+                    <label for="number-people">How many people?</label>
+                    <input type="number" id="number-people" class="number" name="number" placeholder="2" required>
                 </section>
                 <section class="form-group short-input">
-                    <label for="number">How many rooms?</label>
-                    <input type="number" class="number" name="number" placeholder="2" required>
+                    <label for="number-rooms">How many rooms?</label>
+                    <input type="number" id="number-rooms" class="number" name="number" placeholder="2" required>
                 </section>
                 <section class="form-group short-input">
-                    <label for="number">Check-in-date</label>
-                    <input type="number" class="number" name="number" placeholder="2025-01-10" required>
+                    <label for="number-check-in-date">Check-in-date</label>
+                    <input type="number" id="number-check-in-date" class="number" name="number" placeholder="2025-01-10" required>
                 </section>
                 <section class="form-group short-input">
-                    <label for="number">Check-out-date</label>
-                    <input type="number" class="number" name="number" placeholder="2025-01-11" required>
+                    <label for="number-check-out-date">Check-out-date</label>
+                    <input type="number" id="number-check-out-date" class="number" name="number" placeholder="2025-01-11" required>
                 </section>
                 <section class="form-group long-input">
                     <label for="text">Give us three words, and let AI help you find what you want</label>
-                    <input type="text" name="text" placeholder="Nature, calm, quiet" required>
+                    <input type="text" id="text" name="text" placeholder="Nature, calm, quiet" required>
                 </section>
             </form>
         </section>
