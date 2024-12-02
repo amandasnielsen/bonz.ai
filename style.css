@@ -408,6 +408,178 @@ section {
 	font-size: 26px;
 }
 
+/* #endregion page-about-us */
+
+/* #region page-book-room */
+/* PAGE - BOOK */
+
+.page.page--book header {
+	background-image: url(images/header-image-book.png);
+	height: 60vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 0;
+}
+
+.page.page--book header::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.page.page--book .header-wrapper {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+}
+
+.page.page--book .logo-wrapper {
+	padding: 0.4rem;
+}
+
+.page.page--book .logo-wrapper img {
+	height: 2rem;
+	display: block;
+}
+
+.page.page--book .header-content {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.page.page--book header h1 {
+	font-size: 28px;
+	font-family: 'Crimson Text';
+	color: var(--text-color);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.page.page--book .header-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.page.page--book .header-content p {
+	font-weight: 400;
+	text-align: center;
+}
+
+/* Form styled with grid */
+
+.page.page--book .form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+}
+
+.page.page--book .book-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	border: none;
+	max-width: 700px;
+}
+
+.page.page--book .book-form .form-group {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem 0;
+}
+
+.page.page--book .book-form label {
+	align-self: left;
+	margin-bottom: 0.5rem;
+	font-size: 14px;
+}
+
+.page.page--book .book-form input {
+	height: 30px;
+	padding: 0.5rem;
+}
+
+.page.page--book .book-form textarea {
+	height: 30px;
+	font-family: 'Lato';
+}
+
+.page.page--book .book-form .long-input {
+	grid-column: span 2;
+}
+
+.page.page--book .button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+/* Hotel-rooms */
+
+.page.page--book .card.card--room {
+	width: 362px;
+	height: 500px;
+}
+
+.page.page--book .hotel-room-image {
+	width: 362px;
+	height: 120px;
+}
+
+/* Footer */
+.page.page--book footer {
+	display: flex;
+	background-color: #181818;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.page.page--book footer section {
+	padding: 0;
+}
+
+.page.page--book footer .logo {
+	height: 60px;
+}
+
+.page.page--book footer h4 {
+	margin: 0 0 1rem;
+	font-weight: bold;
+}
+
+.page.page--book footer p {
+	margin: 0;
+	font-size: 0.8rem;
+}
+
+.page.page--book footer .social-media {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	font-size: 26px;
+}
+
+/* #endregion page-book-room */
+
+/* #region media-queries */
+
 @media screen and (max-height: 500px) and (orientation: landscape) {
 	.page.page--about header {
 		height: 100vh;
@@ -463,4 +635,5 @@ section {
 		margin-top: 6rem;
 	}
 }
-/* #endregion page-about-us */
+
+/* #endregion media-queries */
