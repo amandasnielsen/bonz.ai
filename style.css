@@ -94,7 +94,7 @@ section {
 
 /* Background image */
 .page.page--index {
-	background-image: url(img/background-image.jpg);
+	background-image: url(img/background-image.avif);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -176,23 +176,6 @@ section {
 	justify-content: center;
 }
 
-@media screen and (min-height: 1024px) {
-	.page.page--index section {
-		padding: 4rem 0;
-	}	
-}
-
-@media screen and (min-height: 1200px) {
-	.page.page--index section {
-		padding: 5rem 0;
-	}	
-}
-
-@media screen and (min-height: 1400px) {
-	.page.page--index section {
-		padding: 7rem 0;
-	}	
-}
 /* #endregion page-index */
 
 /* #region page-about-us */
@@ -204,7 +187,7 @@ section {
 
 /* Header */
 .page.page--about header {
-	background-image: url(img/header-image-about.jpg);
+	background-image: url(img/header-image-about.avif);
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
@@ -410,7 +393,7 @@ section {
 /* PAGE - BOOK */
 
 .page.page--book header {
-	background-image: url(img/header-image-book.png);
+	background-image: url(img/header-image-book.avif);
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
@@ -688,8 +671,11 @@ section {
 	}
 }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 1200px) {	
+	.page.page--index section {
+		padding: 4rem 0;
+	}
+	
 	.page.page--book section.cards {
 		flex-direction: row;
 		justify-content: center;
