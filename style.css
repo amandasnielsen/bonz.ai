@@ -316,10 +316,7 @@ section {
 .page.page--about section.cards p {
 	max-width: 400px;
 	margin: 0;
-
-	/* For handling text overflow with max n rows */
 	display: -webkit-box;
-	-webkit-line-clamp: 5;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
@@ -680,7 +677,6 @@ section {
 	
 	.page.page--about section.cards p {
 		max-width: 320px;
-		-webkit-line-clamp: 3;
 	}
 
 	.page.page--about footer .social-media {
