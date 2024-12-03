@@ -1,4 +1,5 @@
 /* #region base */
+
 /* Variables */
 :root {
 	--primary-color: #A68A56;
@@ -32,20 +33,6 @@ h2, h3, h4, h5 {
 	font-weight: 100;
 }
 
-/* body {
-	opacity: 0;
-	animation: opacity 0.2s ease-out forwards 0.1s;
-}
-
-@keyframes opacity {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-} */
-
 header {
 	padding-top: 2rem;
 	padding-bottom: 3rem;
@@ -75,7 +62,7 @@ section {
 	align-items: center;
 }
 
-.button.button--primary {
+.button--primary {
 	background-color: var(--primary-color);
 }
 
@@ -98,7 +85,7 @@ section {
 
 /* Background image */
 .page.page--index {
-	background-image: url(images/background-image.jpg);
+	background-image: url(img/background-image.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -168,7 +155,7 @@ section {
 	align-items: center;
 }
 
-.page.page--index section.our-vision p {
+.page.page--index section.our-vision .our-vision__text {
 	text-align: center;
 	max-width: 350px;
 	margin-bottom: 0;
@@ -208,7 +195,7 @@ section {
 
 /* Header */
 .page.page--about header {
-	background-image: url(images/header-image-about.jpg);
+	background-image: url(img/header-image-about.jpg);
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
@@ -276,7 +263,7 @@ section {
 	text-align: center;
 }
 
-.page.page--about section.modern-technologies p {
+.page.page--about section.modern-technologies .modern-technologies__text {
 	margin-top: 1rem;
 	width: 80vw;
 	max-width: 580px;
@@ -414,7 +401,7 @@ section {
 /* PAGE - BOOK */
 
 .page.page--book header {
-	background-image: url(images/header-image-book.png);
+	background-image: url(img/header-image-book.png);
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
@@ -456,7 +443,7 @@ section {
 	text-align: center;
 }
 
-.page.page--book header h1 {
+.page.page--book header .header-content .header-content__title {
 	font-size: 28px;
 	font-family: 'Crimson Text';
 	color: var(--text-color);
@@ -473,7 +460,7 @@ section {
 	flex-direction: column;
 }
 
-.page.page--book .header-content p {
+.page.page--book .header-content .header-content__text {
 	font-weight: 400;
 	text-align: center;
 }
@@ -658,7 +645,7 @@ section {
 		transform: translateY(-20%)
 	}
 
-	.page.page--book .header-content h1 {
+	.page.page--book header .header-content .header-content__title {
 		font-size: 2.4rem;
 	}
 
@@ -685,6 +672,10 @@ section {
 	}
 
 	.page.page--about footer .social-media {
+		flex-direction: row;
+	}
+
+	.page.page--book footer .social-media {
 		flex-direction: row;
 	}
 }
