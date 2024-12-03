@@ -1,5 +1,4 @@
-/* #region base */
-
+/* #region theme */
 /* Variables */
 :root {
 	--primary-color: #A68A56;
@@ -7,8 +6,10 @@
 	--background-color: #292929;
 	--text-color: #f8f8f8;
 }
+/* #endregion theme */
 
-/* Global */
+/* #region base-styles */
+/* Resets */
 * {
 	box-sizing: border-box;
 }
@@ -21,6 +22,7 @@ html, body {
 	background-color: var(--background-color);
 }
 
+/* Typography */
 p {
 	font-weight: 300;
 }
@@ -30,22 +32,34 @@ h1, h2, h3, h4, h5 {
 }
 
 h2, h3, h4, h5 {
-	font-weight: 100;
+	font-weight: 400;
 }
+/* #endregion base-styles */
 
+/* #region layout */
+/* Header layout */
 header {
 	padding-top: 2rem;
 	padding-bottom: 3rem;
 }
 
+/* Main and sections layout */
 main {
-	padding: 0 1rem; /* padding to give text some room for low resolution screens */
+	padding: 0 1rem; 
 }
 
 section {
 	padding: 3rem 0;
 }
 
+.page {
+	color: var(--text-color);
+	font-family: 'Lato';
+}
+/* #endregion layout */
+
+/* #region modules */
+/* Button Styles */
 .button {
 	display: block;
 	text-decoration: none;
@@ -69,12 +83,7 @@ section {
 .button:hover {
 	cursor: pointer;
 }
-
-.page {
-	color: var(--text-color);
-	font-family: 'Lato';
-}
-/* #endregion base */
+/* #endregion modules */
 
 /* #region page-index */
 /* PAGE - INDEX */
@@ -557,8 +566,7 @@ section {
 	text-align: center;
 	padding: 0;
 	margin-top: 0;
-	margin-bottom: 3rem;
-	font-size: 14px;
+	margin-bottom: 4rem;
 	cursor: pointer;
 }
 

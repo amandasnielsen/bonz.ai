@@ -32,23 +32,23 @@
             <form class="book-form">
                 <section class="form-group short-input">
                     <label for="number-people">How many people?</label>
-                    <input type="number" id="number-people" class="number" name="number" placeholder="2" required>
+                    <input type="number" id="number-people" name="number-people" placeholder="2" required min="1" max="10">
                 </section>
                 <section class="form-group short-input">
                     <label for="number-rooms">How many rooms?</label>
-                    <input type="number" id="number-rooms" class="number" name="number" placeholder="2" required>
+                    <input type="number" id="number-rooms" name="number-rooms" placeholder="2" required min="1" max="5">
                 </section>
                 <section class="form-group short-input">
-                    <label for="number-check-in-date">Check-in-date</label>
-                    <input type="number" id="number-check-in-date" class="number" name="number" placeholder="2025-01-10" required>
+                    <label for="check-in-date">Check-in-date</label>
+                    <input type="date" id="check-in-date" name="check-in-date" required>
                 </section>
                 <section class="form-group short-input">
-                    <label for="number-check-out-date">Check-out-date</label>
-                    <input type="number" id="number-check-out-date" class="number" name="number" placeholder="2025-01-11" required>
+                    <label for="check-out-date">Check-out-date</label>
+                    <input type="date" id="check-out-date" name="check-out-date" required>
                 </section>
                 <section class="form-group long-input">
-                    <label for="text">Give us three words, and let AI help you find what you want</label>
-                    <input type="text" id="text" name="text" placeholder="Nature, calm, quiet" required>
+                    <label for="preferences">Give us three words, and let AI help you find what you want</label>
+                    <input type="text" id="preferences" name="preferences" placeholder="Nature, calm, quiet" required pattern="[a-zA-Z ,]{3,}">
                 </section>
             </form>
         </section>
