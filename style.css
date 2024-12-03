@@ -319,7 +319,6 @@ section {
 
 	/* For handling text overflow with max n rows */
 	display: -webkit-box;
-	line-clamp: 5;
 	-webkit-line-clamp: 5;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
@@ -401,8 +400,12 @@ section {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
-	font-size: 26px;
 }
+
+.page.page--about footer .media-logo {
+	width: 20px;
+}
+
 
 /* #endregion page-about-us */
 
@@ -498,7 +501,6 @@ section {
 }
 
 .page.page--book .book-form label {
-	align-self: left;
 	margin-bottom: 0.5rem;
 	font-size: 14px;
 }
@@ -603,7 +605,10 @@ section {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
-	font-size: 26px;
+}
+
+.page.page--book footer .media-logo {
+	width: 20px;
 }
 
 /* #endregion page-book-room */
@@ -675,7 +680,6 @@ section {
 	
 	.page.page--about section.cards p {
 		max-width: 320px;
-		line-clamp: 3;
 		-webkit-line-clamp: 3;
 	}
 
