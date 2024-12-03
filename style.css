@@ -18,13 +18,41 @@ html, body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	font-size: 16px;
+	font-size: 1rem;
 	background-color: var(--background-color);
 }
 
 /* Typography */
+@font-face {
+	font-family: 'Crimson Text';
+	src: url('./fonts/CrimsonText-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+  
+@font-face {
+	font-family: 'Crimson Text';
+	src: url('./fonts/CrimsonText-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('./fonts/Lato-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+  
+@font-face {
+	font-family: 'Lato';
+	src: url('./fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 p {
-	font-weight: 300;
+	font-weight: normal;
 }
 
 h1, h2, h3, h4, h5 {
@@ -32,7 +60,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2, h3, h4, h5 {
-	font-weight: 400;
+	font-weight: normal;
 }
 /* #endregion base-styles */
 
@@ -122,14 +150,14 @@ section {
 }
 
 .page.page--index section.heading h1 {
-	font-size: 34px;
-	font-weight: 100;
+	font-size: 2.125rem;
+	font-weight: normal;
 	margin-bottom: 0.1rem;
 	margin-top: 0;
 }
 
 .page.page--index section.heading h2 {
-	font-weight: 100;
+	font-weight: normal;
 	margin: 0;
 }
 
@@ -182,7 +210,7 @@ section {
 /* PAGE - ABOUT US */
 
 .page.page--about h3 {
-	font-size: 1.4rem;
+	font-size: 1.375rem;
 }
 
 /* Header */
@@ -231,7 +259,7 @@ section {
 }
 
 .page.page--about header h1 {
-	font-size: 28px;
+	font-size: 1.75rem;
 	font-family: 'Crimson Text';
 	color: var(--text-color);
 	display: flex;
@@ -436,7 +464,7 @@ section {
 }
 
 .page.page--book header .header-content .header-content__title {
-	font-size: 28px;
+	font-size: 1.75rem;
 	font-family: 'Crimson Text';
 	color: var(--text-color);
 	display: flex;
@@ -453,7 +481,7 @@ section {
 }
 
 .page.page--book .header-content .header-content__text {
-	font-weight: 400;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -482,7 +510,7 @@ section {
 
 .page.page--book .book-form label {
 	margin-bottom: 0.5rem;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .page.page--book .book-form input {
@@ -508,7 +536,7 @@ section {
 
 /* Hotel-rooms */
 .page.page--book .card.card--room h3 {
-	font-size: 28px;
+	font-size: 1.75rem;
 	margin: 1rem 0;
 }
 
@@ -518,7 +546,7 @@ section {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .page.page--book .card.card--room {
@@ -680,10 +708,6 @@ section {
 }
 
 @media screen and (min-width: 1400px) {
-	/* .page.page--index section {
-		padding: 4rem 0;
-	} */
-
 	.page.page--about .book-experience-button-wrapper {
 		margin-top: 6rem;
 	}
