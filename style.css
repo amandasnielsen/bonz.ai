@@ -401,7 +401,7 @@ section {
 /* PAGE - BOOK */
 
 .page.page--book header {
-	background-image: url(img/header-image-book.jpeg);
+	background-image: url(img/header-image-book.png);
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
